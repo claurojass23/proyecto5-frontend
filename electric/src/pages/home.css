@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+
+.HomeImg{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.h2{ 
+    position: absolute;
+    padding: 10px;
+    bottom:65%;
+    left: 30px;
+    color: aliceblue;
+    font-size: 47px;
+}
+
+.conte2{
+    position: absolute;
+    padding: 10px;
+    bottom: 40%;
+    left: 80px;
+}
+
+p{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+button{
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    transform: skew(3deg);
+}
+
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+br{
+    background-color: aliceblue;
+}
+
+h3{
+ color: aliceblue;
+ padding-top: 100px;
+ padding-left: 140px;
+ border-bottom:4px solid ;
+ 
+}
+
+.icono{
+    width: 50px;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+footer h4{
+    color: aliceblue;
+}
+

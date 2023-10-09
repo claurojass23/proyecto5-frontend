@@ -1,0 +1,64 @@
+.img{
+    width: 60px;
+    height: 60px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.navegador{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    font-size: 15px;
+    position: sticky;
+}
+   
+.conteiner{
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    padding: 0 24px;
+    cursor: pointer;
+}
+   
+.conteiner:hover{
+    box-shadow: 0 0.0rem 0.4rem rgb(224, 221, 221) ;
+}
+
+.Navmenu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+   
+.NavItem{
+    margin-right: 20px;
+    color: aliceblue;
+}
+
+.NavLink{
+    text-decoration: none;
+    color: aliceblue;
+}
+   
+.NavLink:hover{
+    color: rgba(116, 135, 240, 0.863);
+}
+
+
+
+.logopages{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.subContenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

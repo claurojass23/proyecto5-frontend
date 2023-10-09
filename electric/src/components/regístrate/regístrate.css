@@ -1,0 +1,25 @@
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+   
+ 
+.form-reserva{
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #70cfe7f3;
+    transition: box-shadow 0.3s ease;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+   
+.form-reserva:hover{
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(211, 209, 209, 0.562) ;
+    color: rgb(0, 0, 0);
+}
