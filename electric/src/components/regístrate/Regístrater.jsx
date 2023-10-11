@@ -1,6 +1,6 @@
 import React from 'react'
 import './regístrate.css'
-import {Form} from 'react-bootstrap'
+import {Button, Form} from 'react-bootstrap'
 import { useState } from 'react'
 
 function Regístrate() {
@@ -15,9 +15,12 @@ function Regístrate() {
  })
 
  async function onSave (event){
-  event.PreventDefault()  
+
+  
+  event.preventDefault()  
+  console.log("prueba")
   console.log(form)
- await fetch("http://localhost:3001/app/auth/signup",{
+ await fetch("http://localhost:3004/app/auth/signup",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
@@ -31,6 +34,8 @@ function Regístrate() {
     setForm({
       ...form,[e.target.name] : e.target.value
     })
+
+    /* console.log("prueba 123") */
 
  }
 
@@ -57,7 +62,7 @@ function Regístrate() {
 
       </Form.Group>
      
-      <button type="submit" >Guardar</button>
+      <button type="submit" className="btn btn-light">Entrar</button>
       </Form>
     </div>
     </>
