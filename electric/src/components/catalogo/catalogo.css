@@ -22,3 +22,7 @@
     box-shadow: 0.1rem 0.1rem 0.4rem rgba(245, 242, 242, 0.562) ;
     background-color: #ccc;
 } 
+
+.icon{
+    margin: 10px;
+}

@@ -15,11 +15,8 @@ function Regístrate() {
  })
 
  async function onSave (event){
-
-  
   event.preventDefault()  
-  console.log("prueba")
-  console.log(form)
+  
  await fetch("http://localhost:3004/app/auth/signup",{
     method:"POST",
     headers:{
@@ -27,6 +24,8 @@ function Regístrate() {
     },
     body:JSON.stringify(form)
   }).then(resp=>resp.json()).then(result=> console.log(result))
+
+  alert('te has registrado con exito')
    
  } 
 
@@ -62,7 +61,7 @@ function Regístrate() {
 
       </Form.Group>
      
-      <button type="submit" className="btn btn-light">Entrar</button>
+      <button type="submit" className="btn btn-light">Guardar</button>
       </Form>
     </div>
     </>

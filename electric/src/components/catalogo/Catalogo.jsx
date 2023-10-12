@@ -3,6 +3,7 @@ import { Card, Button } from 'react-bootstrap'
 import  { useEffect, useState } from 'react';
 import './catalogo.css'
 import kit from './img-catalogo/kit.png'
+import * as Icon from "react-icons/bs";
 
 
 
@@ -34,8 +35,10 @@ function Productos() {
                <Card.Text>existencia{producto.existencias}</Card.Text>
               
              </Card.Body>
+             <div className='conte-icon'>
              <Button variant="primary">Comprar</Button>
-             {/* <Button variant="primary">Comprar</Button> */}
+             <Button variant="primary" className='icon'><Icon.BsFillCartPlusFill/></Button>
+             </div>
            </Card>
            )
          })} 
