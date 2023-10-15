@@ -2,6 +2,7 @@ import React from 'react'
 import './regístrate.css'
 import {Button, Form} from 'react-bootstrap'
 import { useState } from 'react'
+import Swal from 'sweetalert2';
 
 function Regístrate() {
  
@@ -23,18 +24,17 @@ function Regístrate() {
       "Content-Type":"application/json"
     },
     body:JSON.stringify(form)
-  }).then(resp=>resp.json()).then(result=> console.log(result))
-
-  alert('te has registrado con exito')
-   
- } 
+  }).then(resp=>resp.json())
+    .then(result =>  console.log(result), Swal.fire("Registro exitoso, ahora puedes iniciar sesion"))
+  
+} 
 
  const onChange = (e) =>{
     setForm({
       ...form,[e.target.name] : e.target.value
-    })
+  })
 
-    /* console.log("prueba 123") */
+   
 
  }
 
@@ -61,7 +61,7 @@ function Regístrate() {
 
       </Form.Group>
      
-      <button type="submit" className="btn btn-light">Guardar</button>
+      <Button type="submit" className="btn btn-light">Guardar</Button>
       </Form>
     </div>
     </>
