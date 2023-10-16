@@ -18,7 +18,7 @@ function Regístrate() {
  async function onSave (event){
   event.preventDefault()  
   
- await fetch("http://localhost:3004/app/auth/signup",{
+ await fetch("https://api-electric.onrender.com/app/auth/signup",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"

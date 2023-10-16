@@ -21,7 +21,7 @@ function IniciarSesion(){
     async function onLogin(event) {
         event.preventDefault()
         
-        await  fetch("http://localhost:3004/app/auth/login", {
+        await  fetch("https://api-electric.onrender.com/app/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
