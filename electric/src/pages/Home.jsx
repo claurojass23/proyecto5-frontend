@@ -1,9 +1,8 @@
 import React from 'react'
 import './home.css'
 import img from '../img/azul.png'
-import face from '../iconos/facebook.png'
-import inst from '../iconos/instagram.png'
-import gmail from '../iconos/gmail.png'
+import * as Icono from "react-icons/ai";
+import * as Icon from "react-icons/bs";
 
 function Home() {
   return (
@@ -16,16 +15,14 @@ function Home() {
      <button>OFERTAS ESPECIALES AQUI</button>
     </div>
 
-    <div className='productosmasv'>
-      <h3>Productos más vendidos</h3>
-    </div>
-
-    <footer>
+   <footer>
     <h4>Contactanos</h4>
-    <div>
-    <img className='icono' src={face}></img>
-    <img className='icono' src={inst}></img>
-    <img className='icono'src={gmail}></img>
+    <div className='divIcons'>
+    <Icon.BsInstagram className='Icons'/>
+    <Icon.BsFacebook className='Icons' />
+    <Icono.AiOutlineMail className='Icons' />
+    <Icon.BsTelegram className='Icons' />
+    <Icon.BsTelephonePlus className='Icons' />
     </div>
     
     </footer>

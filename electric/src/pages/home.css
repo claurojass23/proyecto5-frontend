@@ -70,3 +70,13 @@ footer h4{
     color: aliceblue;
 }
 
+.Icons{
+    margin: 30px 50px;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Icons:hover{
+  color: yellow;
+}

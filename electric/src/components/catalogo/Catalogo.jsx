@@ -1,16 +1,24 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-import  { useEffect, useState } from 'react';
+import  { useEffect, useState , useContext} from 'react';
 import './catalogo.css'
 import kit from './img-catalogo/kit.png'
 import * as Icon from "react-icons/bs";
-
+import {CartContext} from '../../contex/Cart'
+import { useNavigate } from 'react-router-dom'
 
 
 function Productos() {
 
-  
+  const {addProductToCart} = useContext(CartContext)
+  const navigate = useNavigate()
   const[productos,setProductos]= useState([])
+
+  const verMas = (id) =>{
+    navigate(`/ProdDetalle/${id}`)
+  }
+
+
   useEffect(()=>{
    fetch("http://localhost:3004/productos/getProdList").then(req =>req.json()).then(response=>{
      console.log(response)
@@ -36,8 +44,8 @@ function Productos() {
               
              </Card.Body>
              <div className='conte-icon'>
-             <Button variant="primary">Comprar</Button>
-             <Button variant="primary" className='icon'><Icon.BsFillCartPlusFill/></Button>
+             <Button variant="primary" onClick={() => verMas(producto.id)} >Ver Mas</Button>
+             <Button variant="primary" className='icon' onClick={() => addProductToCart(producto)}><Icon.BsFillCartPlusFill/></Button>
              </div>
            </Card>
            )
