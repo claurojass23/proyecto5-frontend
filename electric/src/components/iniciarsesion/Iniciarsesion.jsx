@@ -21,7 +21,7 @@ function IniciarSesion(){
     async function onLogin(event) {
         event.preventDefault()
         
-        await  fetch("https://api-electric.onrender.com/app/auth/login", {
+        await  fetch("http://localhost:3004/app/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ function IniciarSesion(){
         .then(result =>  {
             
             login(form.email, result.token)
-            Swal.fire("Usuario Loggeado")
+            
             navigate('/Perfil')
         }).catch(error =>{
             Swal.fire(error)

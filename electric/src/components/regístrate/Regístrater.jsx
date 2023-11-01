@@ -18,7 +18,7 @@ function Regístrate() {
  async function onSave (event){
   event.preventDefault()  
   
- await fetch("https://api-electric.onrender.com/app/auth/signup",{
+ await fetch("http://localhost:3004/app/auth/signup",{
     method:"POST",
     headers:{
       "Content-Type":"application/json"
@@ -45,7 +45,7 @@ function Regístrate() {
       <Form onSubmit={onSave} className='form-reserva'>
       <Form.Group>
       <Form.Label>Nombre</Form.Label>
-     <Form.Control type='text' name='name' value={form.name}  onChange={onChange} placeholder='Escribe tu nombre'/>
+      <Form.Control type='text' name='name' value={form.name}  onChange={onChange} placeholder='Escribe tu nombre'/>
       <Form.Label>Apellido</Form.Label>
       <Form.Control type='text'  value={form.lastname} onChange={onChange} placeholder='Escribe tu Email' name='lastname'/>
       <Form.Label>Correo Electrónico</Form.Label>

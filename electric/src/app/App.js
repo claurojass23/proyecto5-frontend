@@ -7,11 +7,12 @@ import Iniciarsesion from './../components/iniciarsesion/Iniciarsesion';
 import Regístrate from './../components/regístrate/Regístrater'
 import Navegador from '../routes/Navegador';
 import Perfil from '../components/perfil/Perfil';
-/* import { UserContext } from '../contex/UserContext'; */
+import { UserContext } from '../contex/UserContext';
+import { useContext } from 'react';
 
 function App() {
  
-  /* const { auth } = useContext(UserContext) ; */
+  const { auth } = useContext(UserContext) ;
 
   return (
     <div className="App">
@@ -19,8 +20,8 @@ function App() {
        <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Catalogo' element={<Catalogo/>}/>
-        {/* {!auth.token && */} <Route path='/Iniciarsesion' element={<Iniciarsesion/>}/>{/* } */}
-        <Route path='/Regístrate' element={<Regístrate/>}/>
+        {!auth.token && <Route path='/Iniciarsesion' element={<Iniciarsesion/>}/>}
+        {!auth.token &&<Route path='/Regístrate' element={<Regístrate/>}/>}
         <Route path='/Perfil' element={<Perfil/>}/>
     </Routes>
 

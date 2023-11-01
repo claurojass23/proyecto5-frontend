@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 import App from './app/App';
 import { UserProvider } from './contex/UserContext';
+import { CartProvider } from './contex/Cart';
 
 
 
@@ -17,9 +18,11 @@ root.render(
 
   <React.StrictMode>
    <UserProvider>
-   <BrowserRouter>
+    <CartProvider>
+    <BrowserRouter>
      <App />
     </BrowserRouter>
+    </CartProvider>
    </UserProvider>
   </React.StrictMode>
 );
