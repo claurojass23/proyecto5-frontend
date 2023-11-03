@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import Swal from 'sweetalert2';
 
-export default function CatalogoDetalle() {
+function CatalogoDetalle() {
+  useEffect(() => {
+    Swal.fire("Estamos en mantenimiento. Por ahora, no hay detalles del producto. Vuelva al inicio.");
+  }, []); 
+
   return (
-    <div>CatalogoDetalle</div>
-  )
+    <>
+      
+    </>
+  );
 }
+
+export default CatalogoDetalle;

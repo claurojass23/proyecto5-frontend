@@ -1,10 +1,11 @@
 import {useContext} from 'react'
 import {Row, Col, Badge, Button, Alert} from 'react-bootstrap'
-import { CartContext } from '../../Context/Cart'
+import { CartContext } from '../contex/Cart'
+
 
 
 function CartItem({item}) {
-    const { cart, decreaseProductFromCart, addProductToCart } = useContext(CartContext)
+    const {  decreaseProductFromCart, addProductToCart } = useContext(CartContext)
 
     return(
         <Row>

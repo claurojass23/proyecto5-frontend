@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { CartContext } from '../../Context/Cart'
+import { CartContext } from '../contex/Cart'
 import { Row, Col, ListGroup, Alert } from 'react-bootstrap'
 import CartItemHeader from './CartItemHeader'
 import CartItem from './CartItem'
@@ -10,8 +10,8 @@ function Cart() {
   const {cart} = useContext(CartContext)
   const style = {"layout":"vertical"};
   const [isPaid, setIsPaid] = useState(false)
-  //iva varia segun el pais 
-  const IVA = 0.16
+ 
+  const IVA = 0.19
 
   const handleCreateOrder = (data, actions) => {
     const order = actions.order.create({
@@ -19,13 +19,13 @@ function Cart() {
             {
                 amount: {
                     value: (cart.amount * (1 + IVA)).toFixed(2),
-                    currency_code: "MXN"
+                    currency_code: "COP"
                 },
-                description: "Compra de productos en UCamp Store",
+                description: "Compra de productos en Electric store",
                 shipping_preference: "NO_SHIPPING"
             }
         ],
-        merchant_name: "UCamp Store"
+        merchant_name: "Electric Store"
         
     })
 
