@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/proyecto5-frontend/static/css/main.ab75db77.css",
+    "main.js": "/proyecto5-frontend/static/js/main.430f4edd.js",
+    "static/media/kit.png": "/proyecto5-frontend/static/media/kit.4f4533ba104c66eaef94.png",
+    "static/media/chip.png": "/proyecto5-frontend/static/media/chip.4335bd581b220f115c10.png",
+    "index.html": "/proyecto5-frontend/index.html",
+    "main.ab75db77.css.map": "/proyecto5-frontend/static/css/main.ab75db77.css.map",
+    "main.430f4edd.js.map": "/proyecto5-frontend/static/js/main.430f4edd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab75db77.css",
+    "static/js/main.430f4edd.js"
+  ]
+}
