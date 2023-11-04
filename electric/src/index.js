@@ -10,9 +10,6 @@ import { CartProvider } from './contex/Cart';
 
 
 
-
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
