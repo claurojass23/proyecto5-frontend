@@ -3,7 +3,7 @@ import { CartContext } from '../contex/Cart'
 import { Row, Col, ListGroup, Alert } from 'react-bootstrap'
 import CartItemHeader from './CartItemHeader'
 import CartItem from './CartItem'
-
+import './carrito.css'
 import { PayPalButtons } from '@paypal/react-paypal-js'
 
 function Cart() {
@@ -48,7 +48,7 @@ const handlePaidOrder = (data, actions) => {
 }
     return (
     <>
-        <div>
+        <div className='contedorPrincipal'>
            {cart.items && cart.items.length > 0 ?
         (
             <>
@@ -71,25 +71,25 @@ const handlePaidOrder = (data, actions) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col className='letrasPago'>
                     Productos:{cart.total}
                     
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col className='letrasPago'>
                         Subtotal: {cart.amount}
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col className='letrasPago'>
                              <span className='text-bold'> A pagar <sub>(Subtotal + IVA)</sub></span>: { cart.amount * (1 + IVA)}
                     </Col>
                 </Row>
                 <hr/>
                         
                         <Row>
-                            <Col md={4}>
+                            <Col md={4} className='paypal'>
                                 {!isPaid ? (
                                     <PayPalButtons
                                         // disabled={false}

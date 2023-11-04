@@ -1,44 +1,20 @@
 .div-perfil{
     display: flex;
     flex-direction: row;
-   justify-content: space-around;
-}
-
-.contenedor-menu-p{
-    background-color: rgb(241, 244, 247);
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding: 20px;
-    margin: 25px;
-    margin-top: 100px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.contenedor-menu-p:hover{
-    box-shadow: 0 0.0rem 0.4rem rgb(224, 221, 221) ;
-    transition: box-shadow 0.3s ease;
+   justify-content: center;
+   align-items: center;
 }
 
 
-.titulos{
-    font-size: 20px;
-    color: rgb(27, 64, 143);
-}
-
-li{
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-li:hover{
-    color: blue;
-}
 
 .micuenta{
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    margin-top: 100px;
+    margin: 0 70px;
+    margin-bottom: 300px;
+    align-items: center;
+    justify-content: center;
+
 }
+

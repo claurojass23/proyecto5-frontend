@@ -9,8 +9,7 @@ export default function Perfil() {
         <h2>MI CUENTA</h2>
         <h4>Bienvenido a Electric</h4>
       </div>
-      
-      <Cart />
+      <Cart/>
     </div>
   );
 }
