@@ -23,7 +23,7 @@ function Productos() {
  
 
   useEffect(() => {
-    fetch("http://localhost:3004/productos/getProdList")
+    fetch("https://api-electric.onrender.com/productos/getProdList")
       .then((req) => req.json())
       .then((response) => {
         console.log(response);
